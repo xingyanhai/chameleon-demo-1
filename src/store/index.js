@@ -4,9 +4,11 @@ import state from './state'
 import mutations from './mutations'
 import createStore from "chameleon-store";
 
-export default createStore({
+const store =  createStore({
   actions,
   getters,
   state,
   mutations
 })
+
+export default store

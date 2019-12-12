@@ -1,0 +1,99 @@
+<template>
+  <view class="demo-com">
+    <text class="title">{{title}}</text>
+    <button c-bind:tap='handleBtnClick'>跳转</button>
+    <button c-bind:tap='handleBtnClick1'>跳转webview</button>
+  </view>
+</template>
+
+<script>
+import cml from "chameleon-api";
+class DemoCom {
+  props = {
+    title: {
+      type: String,
+      default: ''
+    },
+    imageSrc: {
+      type: String,
+      default: ''
+    },
+  }
+
+  data = {
+  }
+
+  computed = {
+  }
+
+  watch  = {
+  }
+
+  methods = {
+    handleBtnClick (e) {
+      cml.navigateTo({
+        path: '/pages/page-2/index',
+        query: {
+          a: 1,
+          b: 'test'
+        }
+      })
+    },
+    handleBtnClick1 (e) {
+      cml.navigateTo({
+        path: '/pages/webview/webview',
+        query: {
+          a: 1,
+          b: 'test'
+        }
+      })
+    }
+  }
+
+  beforeCreate() {
+  }
+
+  created() {
+  }
+
+  beforeMount() {
+  }
+
+  mounted() {
+  }
+
+  beforeDestroy() {
+  }
+
+  destroyed() {
+  }
+}
+
+export default new DemoCom();
+</script>
+<style>
+.demo-com {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  align-self: center;
+  color: #61c7fc;
+  font-size: 72cpx;
+  margin-top: 160cpx;
+  margin-bottom: 20cpx;
+}
+.logo {
+  width: 150cpx;
+  height: 150cpx;
+  margin-top: 100cpx;
+}
+</style>
+<script cml-type="json">
+{
+  "base": {
+    "usingComponents": {}
+  }
+}
+</script>
