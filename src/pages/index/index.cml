@@ -2,7 +2,7 @@
   <page title="chameleon">
       <scroller height="{{-1}}">
         <view class="scroller-wrap">
-            test--------
+            test--------1111111
         </view>
       </scroller>
   </page>
