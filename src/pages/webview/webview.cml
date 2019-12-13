@@ -1,0 +1,71 @@
+<template>
+  <view>
+    <web-view src="{{src}}"></web-view>
+  </view>
+</template>
+
+<script>
+import config from '../../config'
+console.log(config)
+class Page3   {
+
+  data = {
+    src: config.webViewPath
+  }
+
+  computed = {
+  }
+
+  watch  = {
+  }
+
+  methods = {
+  }
+
+  beforeCreate(query) {
+  }
+
+  created(query) {
+  }
+
+  beforeMount(query) {
+  }
+
+  onShow() {
+  }
+
+  mounted() {
+  }
+
+  onHide() {
+  }
+
+  beforeDestroy() {
+  }
+
+  destroyed() {
+  }
+}
+
+export default new Page3();
+</script>
+
+<style>
+
+</style>
+
+<script cml-type="json">
+{
+  "base": {
+      "usingComponents": {
+      // "web-view":"/components/dn-web-view/dn-webview",
+    }
+  },
+  "alipay": {
+    "defaultTitle": "index",
+    "pullRefresh": false,
+    "allowsBounceVertical": "YES",
+    "titleBarColor": "#ffffff"
+  }
+}
+</script>

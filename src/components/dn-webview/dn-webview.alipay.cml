@@ -1,0 +1,62 @@
+<template>
+  <view>
+    <origin-web-view src="{{src}}"></origin-web-view>
+  </view>
+</template>
+
+<script>
+
+class DnWebview implements DnWebviewInterface {
+  props = {
+    src: {
+      type: String,
+      default: '默认值'
+    }
+  }
+
+  data = {
+  }
+
+  computed = {
+  }
+
+  watch = {
+  }
+
+  methods = {
+
+  }
+
+  beforeCreate() {
+  }
+
+  created() {
+  }
+
+  beforeMount() {
+  }
+
+  mounted() {
+  }
+
+  beforeDestroy() {
+  }
+
+  destroyed() {
+  }
+}
+
+export default new DnWebview();
+</script>
+
+<style >
+
+</style>
+
+<script cml-type="json">
+{
+  "base": {
+    "usingComponents": {}
+  }
+}
+</script>

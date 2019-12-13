@@ -4,11 +4,11 @@
 
 <script>
 import routerConfig from '../router.config.json';
-
 class App {
   data = {
     routerConfig
   }
+  globalData = 4
   created(res) {
   }
 }

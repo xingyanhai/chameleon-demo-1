@@ -1,8 +1,8 @@
 <template>
   <view class="demo-com">
     <text class="title">{{title}}</text>
-    <button c-bind:tap='handleBtnClick'>跳转</button>
-    <button c-bind:tap='handleBtnClick1'>跳转webview</button>
+    <button c-bind:tap='handleBtnClick'><text>跳转</text></button>
+    <button c-bind:tap='handleBtnClick1'><text>跳转webview</text></button>
   </view>
 </template>
 
